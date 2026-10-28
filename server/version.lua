@@ -24,9 +24,11 @@ local function older(a, b)
     return false
 end
 
-local function say(msg)
-    print(('^5[%s]^7 %s'):format(resource, msg))
-end
+-- The jex-dev.com palette, matching jex_lib's checker.
+local function rgb(r, g, b) return ('\27[38;2;%d;%d;%dm'):format(r, g, b) end
+
+local LIME, TEXT, FAINT, AMBER, RED = rgb(183, 255, 60), rgb(232, 229, 222), rgb(92, 95, 99), rgb(255, 196, 61), rgb(255, 99, 88)
+local RESET = '\27[0m'
 
 CreateThread(function()
     if GetConvar('jex:versionCheck', 'true') == 'false' then return end
@@ -45,7 +47,8 @@ CreateThread(function()
             and ('\n' .. body):match("\n%s*version%s*%(?%s*['\"]([^'\"]+)['\"]")
 
         if latest and older(have, latest) then
-            say(('^3!^7 update available: ^1%s^7 -> ^2%s^7  %s'):format(have, latest, URL))
+            print(('%s  ▌ %s▲ %s%s %s%s %s→ %s  %supdate available  %s%s%s'):format(
+                LIME, AMBER, TEXT, resource, RED, have, LIME, latest, AMBER, FAINT, URL, RESET))
         end
     end, 'GET')
 end)
