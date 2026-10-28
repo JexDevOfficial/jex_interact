@@ -18,3 +18,5 @@ client_scripts {
     'client/compat/ox_target.lua',
     'client/dev.lua',
 }
+
+server_script 'server/version.lua'
