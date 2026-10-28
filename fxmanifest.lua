@@ -5,7 +5,7 @@ lua54 'yes'
 
 name 'jex_interact'
 author 'Jex'
-version '1.0.0'
+version '1.1.0'
 description 'Hold a key, pick what you want, let go.'
 
 client_scripts {
