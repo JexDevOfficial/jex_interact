@@ -8,7 +8,7 @@ Hold a key, pick what you want, let go.
 [![Release](https://img.shields.io/github/v/release/JexDevOfficial/jex_interact?style=flat-square&color=B7FF3C)](../../releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-B7FF3C?style=flat-square)](LICENSE)
 
-[Download the latest release](../../releases/latest) · [jex.dev](https://jex.dev)
+[Download the latest release](../../releases/latest) · [Documentation](https://jex-dev.com/docs.html#sys-jex-interact-about) · [jex-dev.com](https://jex-dev.com)
 
 </div>
 
@@ -68,6 +68,10 @@ goes with it.
 exists while it is held.
 
 ## Using it
+
+> The full guide — every export, option, state and setting, with
+> examples — is on the **[documentation site](https://jex-dev.com/docs.html#sys-jex-interact-about)**.
+> What follows is the short version.
 
 Plain exports, one table, the same option shape everywhere.
 
